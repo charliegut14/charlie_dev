@@ -8,7 +8,7 @@ while len(network) < 10:
 for x in range(1,255):
     response = os.system("ping -c 1 " + str(network) + str(x) + "> /dev/null 2>&1")
     if response == 0:
-        print(str(network) + str(x), 'is up!')
+        print(str(network) + str(), 'is up!')
     else:
         print(str(network) + str(x), 'is down!')
 
